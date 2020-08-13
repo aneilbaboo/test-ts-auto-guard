@@ -1,0 +1,15 @@
+{
+  "name": "test-ts-auto-guard",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "delete-ts-auto-guards": "find . -name '*.guard.ts' -exec rm {} \\;",
+    "build": "yarn run delete-ts-auto-guards && ts-auto-guard && tsc"
+  },
+  "dependencies": {
+    "ts-auto-guard": "^1.0.0-alpha.1"
+  },
+  "devDependencies": {}
+}
